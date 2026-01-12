@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ServerURL } from "../main";
 import { useDispatch } from "react-redux";
+import { setUserData } from "../redux/UserSlice";
 
 function Login() {
   const navigate = useNavigate();

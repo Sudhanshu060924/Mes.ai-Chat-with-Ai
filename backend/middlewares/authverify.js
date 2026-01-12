@@ -10,10 +10,11 @@ const authverify  = async (req, res, next) => {
         }
 
         const verifyUser = await jwt.verify(token, process.env.JWT_SECRET);
-        req.id = verifyUser.userId;
-        next();
+        req.id = verifyUser.id;
 
         console.log("Verified User:", verifyUser);
+        next();
+
         
     } catch (error) {
         console.error("Authentication Error:", error);
