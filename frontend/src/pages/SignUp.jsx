@@ -31,7 +31,7 @@ function SignUp() {
         { withCredentials: true }
       );
       dispatch(setUserData(result.data));
-      
+      navigate("/profile");
       setUsername("");
       setEmail("");
       setPassword("");

@@ -29,6 +29,7 @@ function Login() {
       );
 
       dispatch(setUserData(result.data));
+      navigate("/");
       setEmail("");
       setPassword("");
       setLoading(false);
@@ -46,7 +47,7 @@ function Login() {
       <div className="w-[60vh]  h-[70vh] bg-gray-300 rounded-lg gap-10 flex flex-col justify-start items-center ">
         <div className="bg-gray-100 w-full h-[25%] rounded-b-[30%] rounded-t-lg">
           <h1 className=" text-2xl text-black-400/60 font-semibold text-center pt-10 ">
-            Login to Mes.ai | Chat with Ai
+            Login to QuickChat
           </h1>
         </div>
         <form

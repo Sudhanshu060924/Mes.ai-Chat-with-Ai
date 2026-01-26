@@ -38,6 +38,7 @@ function Profile() {
         });
 setSaving(false);
         dispatch(setUserData(result.data));
+        navigate("/");
         
       } catch (error) {
         console.log("Error updating profile:", error);
