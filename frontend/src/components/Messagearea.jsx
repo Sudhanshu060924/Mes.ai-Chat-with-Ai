@@ -15,7 +15,7 @@ function Messagearea() {
             onClick={() => dispatch(setSelectedUser(null))}
             className="cursor-pointer"
           >
-            <IoArrowBackOutline className="text-2xl ml-4 " />
+            <IoArrowBackOutline className="text-2xl ml-6 " />
           </div>
           <div
             // onClick={() => navigate("/profile")}
